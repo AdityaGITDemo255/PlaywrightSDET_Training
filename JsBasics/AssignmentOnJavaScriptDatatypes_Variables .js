@@ -218,12 +218,136 @@ let manager1= 'Tom Clancy';
 const EmpJoiningDate ='23-Aug-1997';
 let EmpRefNo = 123456789098n;
 
-let age22 = 25; 
-var age22 = 30; 
-console.log(age22); 
+
+/*
+JavaScript – Find the Error Questions 
+Question 1 
+let name = "Rahul"; 
+let name = "Amit"; 
+console.log(name); 
+Find the error and explain why it occurs. 
+
+Ans : Let type can not be redeclared.
 
 
 
+Question 2 
+const age = 25; 
+age = 30; 
+console.log(age); 
+ans- const type can not be reassigned.
 
 
+Question 3 
+const city;  // error = during const variable declaration user shoud assigned a data.
+city = "Pune"; 
+console.log(city); 
 
+
+Question 4 
+let salary = 50000; 
+salary = 60000; 
+console.log(salary); //no error - 60000
+
+
+Question 5 
+var company = "ABC"; 
+var company = "XYZ"; 
+console.log(company); // no error -xyz
+
+
+Question 6 
+let age = 25; 
+var age = 30; //error = age already has been declared
+console.log(age); 
+
+
+Question 7 
+let age = 25; 
+age = "Twenty Five"; 
+console.log(age);//no error 
+
+
+Question 8 
+const value = 100; 
+value = "Hello"; 
+console.log(value); // error-- can’t modify const value
+
+*/
+
+
+/*
+Tricky Questions 
+Explain Output of following programs 
+
+Question 1 
+var x = 10; 
+{ 
+var x = 20; 
+} 
+console.log(x); //20 as var does not follow blok scope and redeclaration with assigned possible.
+Question 2 
+let x = 10; 
+{ 
+let x = 20; 
+} 
+console.log(x); //10 as let data type  follows global and block scope.
+
+
+Question 3 
+const x = 10; 
+{ 
+const x = 20; 
+} 
+console.log(x); //10 cost data type follows global scope.
+
+Question 4 
+let age = 25; 
+{ 
+let age = 30; 
+console.log(age); //30
+} 
+console.log(age); 25
+
+
+Question 5 
+var x = 10; 
+{ 
+var x = 20; 
+console.log(x); //20
+} 
+console.log(x); //20
+
+
+Question 6 
+console.log(age); //error : Reff error : age is not declared
+let age = 25; 
+
+
+Question 7 
+console.log(age); // undefined 
+var age = 25; 
+
+Question 8 
+var x = 10; 
+{ 
+let x = 20; 
+console.log(x); //20
+} console.log(x); //10
+
+
+Question 9 
+let x = 10; 
+{ 
+var x = 20; //error
+} 
+console.log(x); //errror as var doesn't have block scope so it will try to reassign x  value but x already declared as let type . so redeclaration can't happen.
+Question 10 
+const x = 10; 
+{ 
+var x = 20; //error as const can't be redeclared and reassigned.
+} 
+console.log(x);
+
+
+*/
