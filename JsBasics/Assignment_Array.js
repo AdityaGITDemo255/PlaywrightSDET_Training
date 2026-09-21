@@ -42,6 +42,8 @@ let cart = ["Mobile", "Laptop", "Mouse"];
 console.log(cart);
 let revCart = cart.reverse();
 console.log(revCart);
+//console.log(cart);
+
 console.log(cart.join(" | "));
  
 console.log("Question 3 -------------------------------------------");
@@ -390,5 +392,5 @@ console.log("First Two Failed Tests:", failedTests.slice(0, 2));
 
 failedTests.splice(0, 1, "PaymentFail");
 console.log("After Replacing CheckoutFail with PaymentFail:", failedTests);
-//jjj
+
 console.log("Failures as String:", failedTests.join(", "));
