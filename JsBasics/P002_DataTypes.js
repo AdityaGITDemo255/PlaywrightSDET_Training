@@ -52,8 +52,7 @@ Size: 8byte (64bits)
 1byte=8bits
 
 */
-let x;
-console.log(x);
+
 
 let num1=100;
 console.log(num1);
@@ -88,7 +87,6 @@ let num5=900719925474099168789098090n;
 console.log(typeof num5);//bigint
 let num6=89n;
 console.log(typeof num6);//bigint//
-console.log(num6);
 
 //console.log(num4+num6);//TypeError: Cannot mix BigInt and other types, use explicit conversions
 
@@ -203,12 +201,12 @@ console.log("-----symbol------");
 -it is used to create unique keys in Js Object
 NA for automation
 
-Objectways
+Object ways
 =================
 1.Object Literal
 2.Using Class
 3.Using constructor function
-4.Using prototypes 
+4.Using prototypes
 
 */
 
@@ -294,3 +292,67 @@ console.log(product);
 //delete exeisting properties
 delete product.price;
 console.log(product);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

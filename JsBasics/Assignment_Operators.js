@@ -23,7 +23,7 @@ console.log(x, y); //3 7
 
 9.console.log(10 > 5 && 20 < 30); //true
 
-10.console.log(null || undefined || "Playwright"); //playwright ?? doubt please explain priyanka
+10.console.log(null || undefined || "Playwright"); //playwright
 
 
 */

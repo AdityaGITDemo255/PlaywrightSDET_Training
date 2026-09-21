@@ -262,10 +262,8 @@ console.log("titles are not equal:"+(!(actTitle===expTitle)));//true
 
 
 
-console.log("t" || "p");
 
-console.log(0|| 'a'||'t');
-console.log("a"||0||'t');
+
 
 
 

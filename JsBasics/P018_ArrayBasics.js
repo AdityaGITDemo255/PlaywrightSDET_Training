@@ -103,9 +103,9 @@ console.log(d1[0]);//Pune
 
 
 //RangeError: Invalid array length
-// let d2=new Array(5.6);
-// console.log(d2.length);
-// console.log(d2);
+//let d2=new Array(5.6);
+//console.log(d2.length);
+//console.log(d2);
 
 
 console.log("-----Array.of() added in ES6------");
