@@ -144,7 +144,7 @@ console.log("-----------------------");
 
 class Test{
     
-   fname;
+   
 
    constructor(fname)
 {

@@ -30,12 +30,12 @@ let deletedEle2=fruits.splice(1,1,'Banana','GreenApple');
 console.log(deletedEle2);//[ 'Orange' ]
 console.log(fruits);//[ 'Mango', 'Banana', 'GreenApple', 'Grapes', 'Kiwi', 'Apple' ]
 
-console.log(fruits.length);
+console.log(fruits.length);//6
 
 //insert fruit at index position 4
 let deletedEle3=fruits.splice(4,0,'Cherry','Orange');
 console.log(deletedEle3);//[]
-console.log(fruits);
+console.log(fruits); // ['Mango','Banana','GreenApple','Grapes','Cherry','Orange','Kiwi','Apple']
 
 //to delete multiple elements at same time
 //delete cherry and orange,Kiwi
