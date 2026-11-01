@@ -1,13 +1,13 @@
 {
-  "name": "typescript_learning",
+  "name": "typescriptprojectsa20265",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "description": ""
 }

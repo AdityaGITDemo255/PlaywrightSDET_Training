@@ -1,0 +1,12 @@
+
+
+To access code from Typescript branch 
+step1: goto clone folder and make sure you are inside that Repo project PlaywrightAutomationSA265
+
+step2: git branch -a
+step3: git switch Typescript
+step4:git pull
+
+
+To check branch name
+git branch

@@ -1,0 +1,162 @@
+Assignment on datatypes and variable
+==================================
+1. Employee Information
+Create variables to store:
+Employee name
+Employee ID
+Salary
+Department
+Is the employee currently working?
+Assign appropriate TypeScript data types and print all values.
+
+2. Product Details
+Create variables for a product:
+productName → string
+productId → number
+price → number
+isAvailable → boolean
+Display the product information.
+
+3. Student Marks
+Create variables to store marks of 5 subjects.
+Calculate and display:
+Total marks
+Average marks
+Percentage
+Use appropriate TypeScript data types.
+
+4. Company Information
+Create variables for:
+Company name
+Number of employees
+Revenue
+Is the company hiring?
+Display the information using template literals.
+
+5.Calculate Based on Input Type
+Create a variable:
+let input: unknown;
+The variable can contain either a number or a string.
+If the value is a number:
+Multiply it by 10.
+Display the result.
+If the value is a string:
+Convert it to uppercase.
+Display the result.
+Use typeof to perform type narrowing.
+
+6.Data Type Identifier
+Create a function:
+function identifyData(data: unknown): string
+The function should identify whether the supplied value is:
+String
+Number
+Boolean
+Array
+Object
+Return the appropriate data type as a string.
+Test the function with at least 5 different values.
+
+7.Check Adult
+Create a function:
+checkAge()
+Accept age as a number.
+Return:
+"Adult" if age >= 18
+"Minor" otherwise
+Define the return type explicitly.
+
+8.Create a function:
+checkEvenOdd()
+Accept a number and return:
+"Even"
+or
+"Odd"
+Return type should be string.
+
+9.Employee Bonus
+Create a function:
+calculateBonus()
+Accept employee salary and calculate a 10% bonus.
+
+10.Browser Names
+Create an array containing:
+Chrome
+Firefox
+Edge
+Safari
+Perform the following:
+Print all browser names.
+Add "Opera" to the array.
+Remove "Safari".
+Check whether "Chrome" exists in the array.
+Print the final array.
+
+11.Employee IDs
+Create an array that can contain both numbers and strings because employee IDs may come from different systems.
+Example:
+101
+"EMP102"
+103
+"EMP104"
+Define the appropriate TypeScript type.
+Perform the following:
+Add another numeric ID.
+Add another string ID.
+Try adding a boolean value.
+Observe the TypeScript error.
+
+12 : Mixed User Input
+Create an array that can contain:
+Strings
+Numbers
+Boolean values
+Example:
+
+["Kiran",true, "QA", 101]
+
+Iterate through the array and identify the type of each element using typeof.
+
+=============================================
+Class level,Object literal,type alise and readonly
+
+Assignment 1: Object Literal
+
+Create an object literal named student with the following properties:
+- name – string
+- age – number
+- course – string
+- isActive – boolean
+Create the object with appropriate values and display its properties using console.log().
+
+Assignment 2: Type Alias
+Create a type alias named Employee with the properties employeeId, name, department, and salary.
+Create an employee object using this type alias with appropriate values.
+
+Assignment 3: Class and Constructor
+Create a class named Car with the properties brand, model, and year.
+- Initialize the properties using a constructor.
+- Create two objects of the Car class with different values.
+- Display the properties of both objects using console.log().
+
+Assignment 4: Readonly Keyword in an Object
+Create a type alias named Product with the following properties:
+- readonly productId – number
+- productName – string
+- price – number
+Create a product object using this type alias.
+- Update the product name and price.
+- Try to update the productId.
+- Observe and explain the TypeScript compiler error.
+
+Assignment 5: Readonly Keyword in a Class
+Create a class named BankAccount with the following properties:
+- readonly accountNumber – number
+- accountHolder – string
+- balance – number
+Requirements:
+- Initialize all properties using a constructor.
+- Create an object of the BankAccount class.
+- Try modifying accountHolder and balance.
+- Try modifying accountNumber after object creation.
+- Identify which modifications are allowed and explain why.
