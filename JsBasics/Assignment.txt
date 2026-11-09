@@ -413,4 +413,220 @@ Program 4: Employee Class
 Problem Statement: 
 Create an Employee class with name, salary, and 
 department. Create a method that calculates a 10% bonus and 
-displays the total salary.
+displays the total salary. 
+
+String Assignments
+========================
+1.Check if a String is a Palindrome 
+Problem Statement: 
+Write a Java method to check if a string is a palindrome. 
+Sample Input: 
+str = "madam" 
+Sample Output: 
+madam is a palindrome. 
+
+2. Count Vowels and Consonants 
+Problem Statement: 
+Write a Java program that counts vowels in a given string. 
+Sample Input: 
+str = "Hello World" 
+Sample Output: 
+Vowels: 3 
+
+3. Find Duplicate Words in a Sentence 
+Problem Statement: 
+Write a JS program that reads a sentence (string), splits it into words (array), and finds duplicate 
+words along with their counts. 
+Sample Input: 
+"Java is great and Java is powerful"
+
+4. Convert a Sentence to Word Array and Sort Alphabetically 
+Problem Statement: 
+Given a string sentence, split it into words and return them sorted alphabetically. 
+Sample Input: 
+"zebra apple mango banana" 
+Sample Output: 
+[apple, banana, mango, zebra] 
+Hint: Use Arrays.sort(array to sort)
+
+Assignments on Object
+============================
+Program 1. Student Object 
+Create a student object with the following properties: 
+• id  
+• name  
+• age  
+• course  
+• marks  
+Perform the following: 
+1. Print the complete object.  
+2. Print the student's name.  
+3. Print the student's marks.  
+4. Change the student's course.  
+5. Update the student's marks.  
+6. Add a new property city.  
+7. Delete the age property.  
+
+Program 2. Employee Object 
+Create an employee object containing: 
+id 
+name 
+department 
+designation 
+salary 
+Perform: 
+1. Access each property using dot notation.  
+2. Access each property using bracket notation.  
+3. Update the salary.  
+4. Add a location property.  
+5. Delete the designation property. 
+
+program 3.Create a testData object containing: 
+username 
+password 
+browser 
+environment 
+timeout 
+Use Object.keys() to: 
+1. Get all property names.  
+2. Count the number of properties.  
+3. Check whether username exists. 
+
+Program 4.Create an object containing test configuration: 
+browser: "chromium" 
+headless: true 
+timeout: 30000 
+retries: 2 
+Use Object.values() to: 
+1. Display all values.  
+2. Check whether "chromium" exists.  
+3. Count the number of configuration values. 
+
+Program 5.Create a user object: 
+username 
+role 
+department 
+experience 
+Use Object.entries() to print: 
+username : standard_user 
+role : tester 
+department : QA 
+experience : 5 
+
+Program 6.Create: 
+const user = { 
+name: "John", 
+role: "Tester", 
+city: "Pune" 
+}; 
+Create a new object that: 
+• Contains all properties of user.  
+• Changes role to "Automation Engineer".  
+• Adds experience: 5.  
+The original object should remain unchanged. 
+
+Program 7.Playwright Configuration Object 
+Create a configuration object: 
+browser 
+baseURL 
+headless 
+timeout 
+retries 
+Example: 
+{ 
+} 
+browser: "chromium", 
+baseURL: "https://example.com", 
+headless: true, 
+timeout: 30000, 
+retries: 2 
+Perform: 
+1. Print all configuration values.  
+2. Change the browser.  
+3. Change the timeout.  
+4. Add screenshot: "only-on-failure".  
+5. Check whether retries exists.  
+6. Create a copy with a different baseURL.  
+
+
+Assignments On Encapsulation
+------------------------------
+1. Student Record System  
+Problem Statement:  
+Create a Student class that uses encapsulation to protect its data. The 
+class should have the following  
+private fields:  
+• name (String)  
+• rollNumber (int)  
+• grade (char)  
+Provide appropriate getter and setter methods to access and modify 
+the values. Also, create method  
+that:  
+• Creates a new student object  
+• Sets the data using setters  
+• Displays the data using getters  
+and test it in separate class 
+2. Online Shopping – Product Class 
+Problem Statement 
+Build a JavaScript class Product that stores the following product 
+details: 
+• productId – number 
+• productName – string 
+• price – number 
+• quantityInStock – number 
+Requirements 
+1. All fields must be private using JavaScript private fields (#). 
+2. Provide public getters and setters for all fields. 
+3. Add validation to the setters: 
+o price must be greater than 0. 
+o quantityInStock must be 0 or greater. 
+4. productName should not be empty. 
+5. Create an object of the Product class. 
+6. Use the public setters to set or modify product details. 
+7. Use the public getters to retrieve and display product details. 
+8. Try accessing a private field directly from outside the class and 
+observe what happens. 
+Problem 3: Bank Account 
+Create a BankAccount class. 
+Requirements: 
+• Create a private variable #balance.  
+• Create methods:  
+o deposit(amount)  
+o withdraw(amount)  
+o getBalance()  
+• The balance should not be directly accessible from outside the 
+class.  
+• Prevent withdrawal if the amount is greater than the available 
+balance 
+Problem 4: Student Marks 
+Create a Student class. 
+Requirements: 
+• Private property: #marks  
+• Method: setMarks(marks)  
+• Method: getMarks()  
+• Marks must be between 0 and 100.  
+• Invalid marks should not be stored.
+
+Assignments on Inheritance
+===================================
+1. Basic Inheritance – Employee
+Question
+Create a Person class with a name property and a displayName() method.
+Create an Employee class that extends Person and adds an employeeId.
+Display the employee's name and ID.
+
+2. super to Call Parent Method
+Question
+Create a Vehicle class with a start() method.
+Create a Car class that extends Vehicle.
+Override the start() method in Car, but also call the parent start() method using super.
+
+3. E-Commerce Scenario
+Question
+Create a Product class with:
+- product name
+- price
+- displayProduct() method
+Create an ElectronicProduct class that extends Product and adds:
+- warranty
+Use super() to initialize the parent properties.
