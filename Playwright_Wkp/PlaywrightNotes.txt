@@ -1,0 +1,125 @@
+Playwright
+===============
+Playwright is end to end automation testing framework for UI, api and mobile web application
+
+
+Playwright File structure
+===========================
+1.create spec file
+2.inside spec file--> maintain test()  every single test() is 1test case in Pw
+
+How to design Pw test cases
+============================
+1. Using Playwright Test Runner(Inbuilt/recommended)
+--------------------------------------------
+import {test} from "@Playwright/test"
+
+
+2. Using Async Function(IIFE)
+------------------------------------
+manually here we can do setup and execute 
+
+Fixture
+===========
+- To design and test playwright test case enviornment will be provoded by fixtures
+- Fixtures will help to supply some enviornment to test cases
+
+Types
+======
+1.InBuilt Fixtures
+==================
+PW Support 4 fixtures
+========================
+1.Browser
+2.BrowserContext/Context
+3.Page
+4.Request
+
+2.Custom Fixtures
+======================
+here we can design our own fixtures
+
+How to run playwright testcases
+======================================
+1.To run all spec files in headless mode
+--------------------------
+npx playwright test
+
+2.To run all spec files in headed mode
+--------------------------
+npx playwright test --headed
+
+3.To run any single test case in headed mode
+-------------------------------------------------
+npx playwright test tests/TestCaseName.spec.ts --headed
+
+4.To run specific test on single browser
+------------------------------------------
+npx playwright test tests/TestCaseName.spec.ts --headed --project=chromium
+
+
+
+BrowserMethods
+===================
+1.goto("url"):Promise<Response|null>
+-------------------------------
+Returns the main resource response. In case of multiple redirects,
+ the navigation will resolve with the first non-redirect response.
+
+2.title():Promise<string>
+-------------------------------
+Returns the page's title.
+
+3.url():string
+------------------------
+Returns the current app url
+
+
+How to start any browser session Manually
+==========================================
+chromium object
+-------------------
+This object can be used to launch or connect to Chromium, returning instances of Browser.
+
+chromium.launch({headless:false,channel:''})
+
+what is launch():Promise<Browser>
+==================
+Returns the browser instance.
+
+what is channel?
+====================
+Browser distribution channel.
+Use "chromium" to opt in to new headless mode.
+Use "chrome", "chrome-beta", "chrome-dev", "chrome-canary", "msedge", "msedge-beta", "msedge-dev", or "msedge-canary" to use branded Google Chrome and Microsoft Edge.
+
+newContext(): Promise<BrowserContext>
+=================
+Creates a new browser context. It won't share cookies/cache with other browser contexts.
+
+newPage():Promise<Page>
+==============
+Creates a new page in the browser context.
+
+
+
+Assertion
+=============
+- To validate current state of application we use assertion
+- In Playwright there are two types of assertion
+ 1.Hard assertion(by default)
+ 2.Soft assertion
+
+-In playwright AutoWait is applicable for assertion that is 5sec
+
+For Assertion In playwright we are using chai assertion library where expect() for every single assertion
+-----------------------------------------------------------------
+expect()
+
+Assertion Methods
+======================
+ 1.toHaveTitle():Promise<void>
+ Ensures the page has the given title.
+ 
+ 2.toHaveUrl():Promise<void>
+ Ensures the page is navigated to the given URL.
